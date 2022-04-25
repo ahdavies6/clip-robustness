@@ -74,4 +74,6 @@ conda activate dassl
 bash main.sh imagenet vit_b32 end 16 1 False
 ```
 
-(2022-04-23: This errors out because the image classes are misaligned. See "download ILSVRC 2010 val" section and bottom of `notebooks/convert_class_labels.ipynb` for more details.)
+(2022-04-23: This errors out because the image classes are misaligned. See `notebooks/convert_class_labels.ipynb` for more details.)
+
+(2022-04-25: After re-aligning classes (at bottom of `notebooks/convert_class_labels.ipynb`), we still get the same error where CoOp errors out on `assert len(data_loader) > 0` for all experiments. Further troubleshooting required.)
