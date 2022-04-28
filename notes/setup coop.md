@@ -18,7 +18,7 @@ conda activate dassl
 pip install -r requirements.txt
 ```
 
-however, the torch installation in the `dassl` environment will be wrong (we need the updated cudatoolkit and torch), so instead of running the `conda install pytorch ...` command, run
+(we are doing something different from their instruction --> the torch installation in the `dassl` environment will be wrong (we need the updated cudatoolkit and torch), so instead of running the `conda install pytorch ...` command run
 
 ```bash
 conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
@@ -31,14 +31,10 @@ python setup.py develop
 
 # install CoOp
 
-(I'm not sure how this will work with my having added CoOp as a `git submodule` -- if it's already there, then just install `requirements.txt`; if it's not, do the `git clone` command as well)
-
 make sure you're still in dassl conda environment, then do this:
 
 ```bash
-cd ..
-git clone https://github.com/KaiyangZhou/CoOp.git
-cd CoOp/
+cd ../CoOp/
 
 pip install -r requirements.txt
 ```
@@ -48,6 +44,7 @@ pip install -r requirements.txt
 now add a link to the dataset:
 
 ```bash
+cd ..
 mkdir data  # (if it's not already there)
 ln -s /shared/timan108/imagenet data/imagenet
 ```
