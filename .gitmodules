@@ -1,3 +1,6 @@
 [submodule "third_party/robustness_metrics"]
 	path = third_party/robustness_metrics
 	url = https://github.com/RyanMarten/robustness_metrics
+[submodule "CoOp"]
+	path = CoOp
+	url = https://github.com/ahdavies6/CoOp.git

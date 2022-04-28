@@ -17,3 +17,8 @@ imagenet\_a|0\.147|clip\_vit_b32|
 |imagenet\_c_average|0\.608|vit-b/32|
 |imagenet\_r|0\.431|vit-b/32|
 |imagenet\_a|0\.120|vit-b/32|
+
+
+# tmp
+
+CLIP (and we) use [simple labels for ImageNet classes](https://github.com/anishathalye/imagenet-simple-labels) (see OpenAI's code [here](https://github.com/openai/CLIP/blob/main/notebooks/Prompt_Engineering_for_ImageNet.ipynb)
