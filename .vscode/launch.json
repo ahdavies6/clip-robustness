@@ -37,7 +37,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: train.py defaults",
+            "name": "train.py defaults (run with train.py open)",
             "type": "python",
             "request": "launch",
             "program": "${file}",
@@ -52,6 +52,29 @@
                 "TRAINER.COOP.CSC", "False",
                 "TRAINER.COOP.CLASS_TOKEN_POSITION", "end",
                 "DATASET.NUM_SHOTS", "1"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/CoOp",
+            "justMyCode": true
+        },
+        {
+            "name": "basically eval.sh (also run w train.py open)",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "args": [
+                "--root", "/shared/timan108", 
+                "--seed", "1",
+                "--trainer", "CoOp",
+                "--dataset-config-file", "configs/datasets/imagenet.yaml",
+                "--config-file", "configs/trainers/CoOp/vit_b32.yaml",
+                "--output-dir", "output/imagenet/CoOp/default",
+                "--model-dir", "output/imagenet/CoOp/vit_b32_ep50_16shots/nctx16_cscFalse_ctpend/seed1/",
+                "--load-epoch", "50",
+                "--eval-only",
+                "TRAINER.COOP.N_CTX", "16",
+                "TRAINER.COOP.CSC", "False",
+                "TRAINER.COOP.CLASS_TOKEN_POSITION", "end",
             ],
             "console": "integratedTerminal",
             "cwd": "${workspaceFolder}/CoOp",
