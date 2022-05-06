@@ -1,6 +1,11 @@
 # clip-robustness
 Project for CS444@UIUC, Spring 2022. Examine the robustness of CLIP and its image/text encoders under various conditions.
 
+## Setup
+`git clone --recurse-submodules https://github.com/ahdavies6/clip-robustness.git`
+
+## Results from robustness_metrics
+
 https://colab.research.google.com/drive/1hJN_TbwFxaQjuwdH24Ryrr6Qa3jaOoAW#scrollTo=DTwQ3hqH5FBE
 |DatasetName|Accuracy|ModelName|
 |---|---|---|
