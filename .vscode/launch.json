@@ -37,10 +37,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "train.py defaults (run with train.py open)",
+            "name": "CoOp/train.py default args",
             "type": "python",
             "request": "launch",
-            "program": "${file}",
+            "program": "${workspaceFolder}/CoOp/train.py",
             "args": [
                 "--root", "/shared/timan108", 
                 "--seed", "1",
@@ -58,10 +58,10 @@
             "justMyCode": true
         },
         {
-            "name": "basically eval.sh (also run w train.py open)",
+            "name": "CoOp/train.py eval args",
             "type": "python",
             "request": "launch",
-            "program": "${file}",
+            "program": "${workspaceFolder}/CoOp/train.py",
             "args": [
                 "--root", "/shared/timan108", 
                 "--seed", "1",
