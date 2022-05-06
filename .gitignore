@@ -7,5 +7,7 @@
 __pycache__
 */__pycache__
 
-Dassl.pytorch
+# Dassl.pytorch
+OLD_Dassl.pytorch
 data/
+tmp/
