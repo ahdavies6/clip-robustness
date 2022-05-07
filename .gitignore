@@ -6,7 +6,7 @@
 */.ipynb_checkpoints
 __pycache__
 */__pycache__
-
+*.pt
 # Dassl.pytorch
 OLD_Dassl.pytorch
 data/

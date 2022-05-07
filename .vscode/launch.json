@@ -55,7 +55,8 @@
             ],
             "console": "integratedTerminal",
             "cwd": "${workspaceFolder}/CoOp",
-            "justMyCode": true
+            "justMyCode": true,
+            "env": {"CUDA_VISIBLE_DEVICES": "1,2,3"}
         },
         {
             "name": "CoOp/train.py eval args",
@@ -72,8 +73,8 @@
                 "--model-dir", "output/imagenet/CoOp/vit_b32_ep50_16shots/nctx16_cscFalse_ctpend/seed1/",
                 "--load-epoch", "50",
                 "--eval-only",
-                "TRAINER.COOP.N_CTX", "16",
-                "TRAINER.COOP.CSC", "False",
+                "TRAINER.COOP.N_CTX", "16",   // Context token count
+                "TRAINER.COOP.CSC", "False",  // class specific context
                 "TRAINER.COOP.CLASS_TOKEN_POSITION", "end",
             ],
             "console": "integratedTerminal",
